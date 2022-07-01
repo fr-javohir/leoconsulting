@@ -274,18 +274,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
   .form__container {
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
-    transform: translateY(-5rem);
+    transform: unset;
   }
   .form-mob-bottom,
   .form-mob-top {
     display: block;
+    position: relative;
   }
+
   .form__background {
     display: none;
   }
@@ -294,11 +295,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
   }
   .form-mob-top {
-    position: relative;
-    top: -5rem;
+    top: -2rem;
   }
   .form-mob-bottom {
-    transform: translateY(-5rem);
+    bottom: -2rem;
   }
   .form__illusion {
     display: none;
