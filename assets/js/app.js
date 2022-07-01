@@ -51,7 +51,7 @@ const closeBtn = document.querySelector(".btn-close");
 const nav = document.querySelector(".navigation");
 
 menuBtn.addEventListener("click", function (e) {
-  nav.classList.add("open");
+  nav.classList.toggle("open");
 });
 closeBtn.addEventListener("click", function () {
   nav.classList.remove("open");
